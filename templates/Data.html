@@ -1,0 +1,30 @@
+<body style="background-color:honeydew;"></body>
+{% extends "base.html" %}
+{% block title%}All Students{% endblock %}
+{% block content %} 
+<!DOCTYPE html>
+<html>
+    <center><u><h1 style="color: crimson;">STUDENT PROFILE</h1></u></center>
+<body><br>
+<table border="1" width="45%" height="0px" align="center" bgcolor="white">
+    <tr align="center" bgcolor="skyblue">
+    <th bgcolor="lightblue">Name</th>
+    <th bgcolor="lightblue">Age</th>
+    <th bgcolor="lightblue">Gender</th>
+    <th bgcolor="lightblue">Mobile </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for user in users %}
+        <tr>
+            <td>{{ user.name }}</td>
+            <td>{{ user.age }}</td>
+            <td>{{ user.gender }}</td>
+            <td>{{ user.mobile }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+</html>
+
