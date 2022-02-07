@@ -1,1 +1,1 @@
-# Python-Project
+This is a basic project from the outcome of python programming. Actually, this a basic webpage created using HTML and Python code with the help of Flask frameworks and as well as MongoDB.This gets value from the user and store it in the MongoDB database which is actually an unstructured database. From the database we can also access the data in Webpage .
